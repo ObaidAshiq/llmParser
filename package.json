@@ -1,0 +1,81 @@
+{
+  "name": "@ubisage/llm-markdown-renderer",
+  "version": "0.1.2",
+  "description": "A production-ready React component for rendering LLM/AI assistant markdown output with syntax highlighting, copy-to-clipboard, GFM support, and full customization.",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    },
+    "./styles.css": "./dist/styles.css"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "scripts": {
+    "build": "tsup && tsc --emitDeclarationOnly --declaration --declarationDir dist && node -e \"const fs=require('fs');fs.copyFileSync('src/styles/default.css','dist/styles.css');fs.copyFileSync('dist/index.d.ts','dist/index.d.cts')\"",
+    "dev": "tsup --watch",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "llm",
+    "markdown",
+    "react",
+    "ai",
+    "chatbot",
+    "gfm",
+    "syntax-highlighting",
+    "markdown-renderer",
+    "openai",
+    "chatgpt",
+    "claude",
+    "gemini",
+    "assistant"
+  ],
+  "author": "Ubisage",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "homepage": "",
+  "bugs": {
+    "url": ""
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-dom": ">=18.0.0"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react-markdown": "^10.1.0",
+    "react-syntax-highlighter": "^16.1.1",
+    "rehype-sanitize": "^6.0.0",
+    "remark-gfm": "^4.0.1"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "@types/react-syntax-highlighter": "^15.5.13",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.2"
+  }
+}
