@@ -1,6 +1,6 @@
 {
   "name": "@ubisage/llm-markdown-renderer",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "A production-ready React component for rendering LLM/AI assistant markdown output with syntax highlighting, copy-to-clipboard, GFM support, and full customization.",
   "type": "module",
   "main": "./dist/index.js",
