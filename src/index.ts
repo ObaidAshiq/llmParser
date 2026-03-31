@@ -1,3 +1,5 @@
+"use client";
+
 export { LLMMarkdownRenderer } from "./LLMMarkdownRenderer";
 
 export type {
