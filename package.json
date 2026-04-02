@@ -1,6 +1,6 @@
 {
   "name": "@ubisage/llm-markdown-renderer",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A production-ready React component for rendering LLM/AI assistant markdown output with syntax highlighting, copy-to-clipboard, GFM support, and full customization.",
   "type": "module",
   "main": "./dist/index.js",
@@ -47,11 +47,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git+https://github.com/ObaidAshiq/llmParser.git"
   },
-  "homepage": "",
+  "homepage": "https://github.com/ObaidAshiq/llmParser#readme",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/ObaidAshiq/llmParser/issues"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
